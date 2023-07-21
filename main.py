@@ -3,7 +3,12 @@ import streamlit as st
 from streamlit import components
 import os
 from io import StringIO
-import openpyxl
+
+import subprocess
+import sys
+
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
 
 def excel_file_opener(file):
@@ -51,6 +56,7 @@ def sidebar():
 
 
 def main():
+    install(openpyxl)
     set_page(st)
     #sidebar()
 
