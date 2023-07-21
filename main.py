@@ -56,7 +56,7 @@ def sidebar():
 
 
 def main():
-    install(openpyxl)
+
     set_page(st)
     #sidebar()
 
