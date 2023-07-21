@@ -3,6 +3,7 @@ import streamlit as st
 from streamlit import components
 import os
 from io import StringIO
+import openpyxl
 
 
 def excel_file_opener(file):
